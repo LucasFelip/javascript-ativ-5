@@ -21,10 +21,7 @@
         </header>
         <section class="container">
             <div style="margin-bottom: 2rem">
-                <div id="js-mensagem-view"></div>
-
-                <form class="form" onsubmit="pedidoController.adiciona(event )">
-
+                <form class="form" onsubmit="alunoController.adicionar(event)">
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" value="" class="form-control" required autofocus value="" />
@@ -51,12 +48,13 @@
                         <button id="btnCadastro" class="btn btn-primary" type="submit">Incluir</button>
                         <button class="btn btn-default" type="reset">Limpar Formulário</button>
                     </div>
-
                 </form>
             </div>
         </section>
         <section class="container">
+            <div id="js-alunoRegView">
 
+            </div>
         </section>
         <footer class="text-center text-white bg-primary mt-3">
             <div class="text-center text-white p-3">
@@ -64,6 +62,7 @@
             </div>
         </footer>
     </main>
+
 </body>
 
 </html>

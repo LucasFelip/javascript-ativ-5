@@ -4,9 +4,21 @@ class Aluno {
         this._nota1 = nota1;
         this._nota2 = nota2;
         this._nota3 = nota3;
-        this._media = (this._nota1 * this._nota2 * this._nota3) / 3;
 
         Object.freeze(this);
+    }
+
+    getMedia() {
+        return (this._nota1 * this._nota2 * this._nota3) / 3;
+    }
+
+    getAprovacao() {
+        if (this._media > 7) {
+            return "Aprovado"
+        } else if (this._media >= 3 && this._media <= 7) {
+            return "Prova final"
+        }
+        return "Reprovado"
     }
 
     get nome() {
@@ -23,16 +35,5 @@ class Aluno {
 
     get nota3() {
         return this._nota3;
-    }
-
-    get media() {
-        return this._media;
-    }
-
-    get aprovação() {
-        if (this._media >= 7) {
-            return "Aprovado"
-        }
-        return "Resprovado"
     }
 }

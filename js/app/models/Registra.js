@@ -1,4 +1,5 @@
 class Registra {
+
     constructor() {
         this._itens = [];
     }
