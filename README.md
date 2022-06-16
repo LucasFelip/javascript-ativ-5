@@ -11,3 +11,11 @@ Para reprovação direta, esta média deve ser menor que 30.
 Médias entre 30 (inclusive) e 70 (exclusive) colocam o aluno em prova final. Se a média da prova final com a média anterior for menor que 50, o aluno está reprovado, caso contrário, aprovado.
 
 * Saída: Uma tabela informando o nome do aluno, primeira nota, segunda nota, percentual de frequência, prova final, a média final e situação (Aprovado ou Reprovado). Na mesma tabela terá um rodapé (tfoot) com o número de aprovados, reprovados e a média geral da turma.
+
+Desenvolvimento
+
+* Frequência 
+** Recebe carga horaria e numero de faltas 
+
+* Notas
+** Recebe a nota da prova 1, prova 2 e prova final, sendo esse não obrigatorio
