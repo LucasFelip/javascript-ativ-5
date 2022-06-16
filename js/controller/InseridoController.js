@@ -6,7 +6,8 @@ class InseridoController {
         this._inputNota1 = $('#nota1');
         this._inputNota2 = $('#nota2');
         this._inputNota3 = $('#nota3');
-        this._inputFrequencia = $('#frequencia');
+        this._inputCh = $('#ch');
+        this._inputFaltas = $('#faltas');
 
         // model
         this._inserido = new Inserido();
@@ -30,7 +31,8 @@ class InseridoController {
             this._inputNota1.value,
             this._inputNota2.value,
             this._inputNota3.value,
-            this._inputFrequencia.value,
+            this._inputCh.value,
+            this._inputFaltas.value,
         );
     }
 
@@ -39,7 +41,8 @@ class InseridoController {
         this._inputNota1.value = '';
         this._inputNota2.value = '';
         this._inputNota3.value = '';
-        this._inputFrequencia.value = '';
+        this._inputCh.value = '';
+        this._inputFaltas.value = '';
 
         this._inputNome.focus();
     }
