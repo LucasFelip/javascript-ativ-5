@@ -10,11 +10,23 @@ class Aluno {
     }
 
     getMedia() {
-        return ((this._nota1 + this._nota2) / 2);
+        if (this._nota1 < 7 && this._nota1 > 3)
+            return ((this._nota3 + this._nota2) / 2);
+        else if (this._nota2 < 7 && this._nota2 > 3)
+            return ((this._nota3 + this._nota1) / 2);
+        else
+            return ((this._nota3 + this._nota1) / 2);
     }
 
-    getSituacao() {
-
+    getAprovacao() {
+        if (this._frequencia < 75)
+            return "Reprovado por faltas";
+        else {
+            if (this.getMedia >= 7)
+                return "Aprovado"
+            else
+                return " Reprovado"
+        }
     }
 
     get nome() {
