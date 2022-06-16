@@ -10,22 +10,20 @@ class Aluno {
     }
 
     getMedia() {
-        if (this._nota1 < 7 && this._nota1 > 3)
-            return ((this._nota3 + this._nota2) / 2);
-        else if (this._nota2 < 7 && this._nota2 > 3)
-            return ((this._nota3 + this._nota1) / 2);
-        else
-            return ((this._nota3 + this._nota1) / 2);
+        return (Number(this._nota1) + Number(this._nota2)) / 2
     }
 
     getAprovacao() {
+        let media = this.getMedia()
         if (this._frequencia < 75)
-            return "Reprovado por faltas";
+            return "Reprovado por faltas"
         else {
-            if (this.getMedia >= 7)
+            if (media >= 7)
                 return "Aprovado"
+            else if (media < 7 && media >= 3)
+                return "Prova final"
             else
-                return " Reprovado"
+                return "Reprovado"
         }
     }
 
