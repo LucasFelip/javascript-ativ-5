@@ -31,8 +31,8 @@ class InseridoView extends View {
             <tfoot>
                 <td colspan="5">Média Total</td>
                 <td>
-                    ${inserido.getItens().reduce((total, item) => 
-                                                item.getMediaFinal() + total, 0.0)}
+                    ${(inserido.getItens().reduce((total, item) => 
+                                                item.getMediaFinal() + total, 0.0)/inserido.getItens().length).toFixed()}
                 </td>
             </tfoot>
         </table>
