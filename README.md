@@ -15,7 +15,7 @@ Médias entre 30 (inclusive) e 70 (exclusive) colocam o aluno em prova final. Se
 Desenvolvimento
 
 * Frequência 
-- Recebe carga horaria e numero de faltas 
+- - Recebe carga horaria e numero de faltas 
 
 * Notas
 - Recebe a nota da prova 1, prova 2 e prova final, sendo esse não obrigatorio
